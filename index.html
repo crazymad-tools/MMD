@@ -1,0 +1,67 @@
+<!-- ----------------------------------------------------
+ * Author           : crazy_mad
+ * Last modified    : 2017-05-20 11:47
+ * Filename         : index.html
+ * Description      : 
+ ----------------------------------------------------- -->
+
+<html>
+<meta content="text/html"; charset=utf-8 />
+<title>markdown</title>
+
+<head>
+<script src="markdown.js"></script>
+<style>
+//ol, ul{
+//	margin-left:20px;padding-left:0px;text-indent:0px
+//}
+ol {
+
+    display: block;
+    list-style-type: decimal;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+a {
+    //color:gray;
+    color: #FF3903;
+}
+a:hover {
+    color:black;
+    margin-left: 3px;
+}
+.link {
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+	<textarea id="input" style="width:800px; height: 300px;">## 代码示例	
+```
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+
+    cout &lt;&lt; "hello world!" &lt;&lt; endl;
+
+    return 0;
+}
+```
+## 连接示例
+[blog.crazymad.cn](http://blog.crazymad.cn)
+## 图片示例
+![../comics/images](../comics/images/2017.4.9.2.png)
+</textarea><br />
+	<button onclick="parse()">预览</button>
+	<div id="output" style="width: 50%;">
+	</div>
+</body>
+</html>
+
+
